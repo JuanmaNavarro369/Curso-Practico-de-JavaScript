@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --special-brown: rgb(158, 126, 111);
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 15px;
+            --md: 17px;
+            --lg: 19px;
+        }
+        .product-detail{
+            display: grid;
+            grid-template-rows: auto 0fr auto;
+            justify-items: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 460px;
+            height: 98vh;
+        }
+        .product-detail-close{
+            position: absolute;
+            right: 0;
+        }
+        aside > img:nth-child(2){
+            width: 100%;
+            height: 100%;
+            border-radius: 0px 0px 12px 12px;
+            object-fit: cover; /*Adecúa la imagen a su tamaño original*/
+        }
+        .points{
+            display: flex;
+            height: 10px;
+            gap: 27px;
+            color: var(--very-light-pink);
+            margin: 0;
+            padding: 6px 0px 0px 0px;
+        }
+        .points li:nth-child(1){
+            color: var(--special-brown);
+        }
+        .points li:nth-child(1):hover{
+            color: var(--special-brown);
+            cursor: pointer;
+        }
+        .points li:nth-child(2):hover{
+            color: var(--special-brown);
+            cursor: pointer;
+        }
+        .points li:nth-child(3):hover{
+            color: var(--special-brown);
+            cursor: pointer;
+        }
+        .primary-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 66px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        background-color: var(--special-brown);
+        font-size: var(--lg);
+        font-weight: bold;
+        border: transparent;
+        margin: 24px 0px 0px 30px;
+        border-radius: 9px;
+        gap: 12px;
+        cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+        }
+        .product-detail-close{
+            z-index: 3;
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            cursor: pointer;
+        }
+        .product-detail-close img {
+            width: 27px;
+            height: 27px;
+        }
+        .product-info{
+            width: 460px;
+            margin: 24px 0px 0px 12px;
+        }
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--lg);
+            margin: 0;
+        }
+        .product-info p:nth-child(2){
+            font-weight: 300;
+            font-size: var(--lg);
+            margin: 9px 0px 0px 0px;
+        }
+        .product-info p:nth-child(3){
+            font-weight: 300;
+            font-size: var(--md);
+            margin: 16px 16px 16px 0px;
+        }
+        @media(max-width: 640px){
+            .product-detail{
+                width: 100%;
+            }
+            .product-info{
+                width: 100%;
+            }
+            .primary-button{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+            <img src="./Icons/icon-close.png" alt="close">
+        </div>
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="product-image" alt="product-image">
+        <ul class="points">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="product-info">
+            <p>120€</p>
+            <p>Bicicleta Vintage</p>
+            <p>Vendo esta bicicleta semi nueva, a penas la uso porque trabajo mucho. La planta de fondo es de mi casa esa no la vendo que sabeis ustedes mucho. La bicicleta es del año 1499 y mi tataratatarabuelo se la compró a un misionero que venía de Sudán del Sur, antes de todo el mamoneo del petróleo, con lo cual no me regateéis que sois unos enmayaos.</p>
+                <button type="submit" class="primary-button">
+                    <img src="./Icons/icon_shopping_cart.svg" alt="add-to-cart">
+                    Añadir al carrito
+        </div>
+    </aside>
+</body>
+</html>

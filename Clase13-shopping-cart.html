@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --special-brown: rgb(158, 126, 111);
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 15px;
+            --md: 17px;
+            --lg: 19px;
+        }
+        .my-order-container{
+            width: 440px;
+            height: 100vh;
+            display: grid;
+            position: absolute;
+            top: 0;
+            right: 27px;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+        }
+        .header img{
+            transform: rotate(180deg);
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+        .title{
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0px 0px 0px 18px;
+        }
+        .product-info span{
+            font-size: var(--md);
+            font-weight: 300;
+        }
+        .shopping-cart{
+            width: 440px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .shopping-cart div{
+            display: flex;
+            align-items: center;
+        }
+        .shopping-cart figure{
+            margin: 0;
+        }
+        .shopping-cart figure img{
+            width: 100px;
+            height: 100px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+        .name{
+            font-size: var(--sm);
+            font-weight: 300;
+            padding-left: 16px ;
+        }
+        .price{
+            font-size: var(--md);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        .product-detail-close img{
+            width: 15px;
+            height: 15px;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+        .primary-button{
+            width: 80%;
+            height: 60px;
+            margin: 46px 0px 12px 46px;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            background-color: var(--special-brown);
+            font-size: var(--lg);
+            font-weight: bold;
+            border: transparent;
+            border-radius: 9px;
+            cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        @media(max-width: 640px){
+            .my-order-container{
+                width: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 6px;
+                box-sizing: border-box;
+            }
+            .shopping-cart{
+                width: 100%;
+            }
+            .primary-button{
+                width: 100%;
+                margin: 21px 0px 10px 0px;
+            }
+        }
+        </style>
+</head>
+<body>
+        <article class="my-order-container">
+            <header class="header">
+                <img src="./Icons/flechita.svg" alt="flechita"/>
+                <h1 class="title">Tu carrito</h1>
+            </header>
+            <nav class="shopping-cart">
+                <div>
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </figure>
+                    <p class="name">Bicicleta Vintage</p>
+                </div>
+                <div class="product-detail-close">
+                    <p class="price">120,00€</p>
+                        <img src="./Icons/icon-close.png" alt="close">
+                </div>
+            </nav>
+            <nav class="shopping-cart">
+                <div>
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </figure>
+                    <p class="name">Bicicleta Vintage</p>
+                </div>
+                <div class="product-detail-close">
+                    <p class="price">120,00€</p>
+                        <img src="./Icons/icon-close.png" alt="close">
+                </div>
+            </nav>
+            <nav class="shopping-cart">
+                <div>
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </figure>
+                    <p class="name">Bicicleta Vintage</p>
+                </div>
+                <div class="product-detail-close">
+                    <p class="price">120,00€</p>
+                        <img src="./Icons/icon-close.png" alt="close">
+                </div>
+            </nav>
+            <nav class="shopping-cart">
+                <div>
+                    <figure>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </figure>
+                    <p class="name">Bicicleta Vintage</p>
+                </div>
+                <div class="product-detail-close">
+                    <p class="price">120,00€</p>
+                        <img src="./Icons/icon-close.png" alt="close">
+                </div>
+            </nav>
+            <footer class="footer">
+                <div>
+                    <span>Total</span>
+                </div>
+                <div>
+                    <span>480€</span>
+                </div>
+            </footer>
+            <button type="submit" class="primary-button login-button">Crear</button>
+        </article>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--special-brown);
+        }
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --special-brown: rgb(158, 126, 111);
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 15px;
+            --md: 17px;
+            --lg: 19px;
+        }
+        .my-orders{
+            width: 100%;
+            height: 98vh;
+            display: grid;
+            place-items: center center;
+        }
+        .product-info{
+            grid-template-columns: auto 1fr auto;
+            display: grid;
+            justify-items: end;
+            align-items: center;
+            width: 440px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .product-info h1{
+            margin: 0px 18px 3px 0px;
+            font-size: var(--lg);
+        }
+        .product-info span{
+            font-size: var(--md);
+            font-weight: 300;
+        }
+        .product-info div{            
+            padding-bottom: 6px;
+            margin-left: 6px;
+        }
+        .title{
+            font-size: 21px;
+            font-weight: 700;
+            margin: 36px 0px 24px 0px;
+        }
+        .img{
+            cursor: pointer;
+            padding-right: 21px;
+        }
+        @media(max-width: 430px){
+            .title{
+                display: none;
+            }
+            .my-orders{
+                width: 100%;
+                padding-top: 90px;
+                display: grid;
+                place-items: start;
+            }
+            .product-info{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="my-orders">
+        <article class="my-orders-container">
+            <h1 class="title">Mis Pedidos</h1>
+            <nav class="product-info">
+                <div>
+                    <p>
+                        <h1>27.11.23</h1>
+                        <span>6 artículos</span>
+                    </p>
+                </div>
+                <h1>720€</h1>
+                <img class="img" src="./Icons/flechita.svg">
+            </nav>
+
+            <nav class="product-info">
+                <div>
+                    <p>
+                        <h1>18.11.23</h1>
+                        <span>27 artículos</span>
+                    </p>
+                </div>
+                <h1>940€</h1>
+                <img class="img" src="./Icons/flechita.svg">
+            </nav>
+
+            <nav class="product-info">
+                <div>
+                    <p>
+                        <h1>30.11.23</h1>
+                        <span>6 artículos</span>
+                    </p>
+                </div>
+                <h1>80€</h1>
+                <img class="img" src="./Icons/flechita.svg">
+            </nav>
+
+            <nav class="product-info">
+                <div>
+                    <p>
+                        <h1>21.10.23</h1>
+                        <span>15 artículos</span>
+                    </p>
+                </div>
+                <h1>400€</h1>
+                <img class="img" src="./Icons/flechita.svg">
+            </nav>
+
+            <nav class="product-info">
+                <div>
+                    <p>
+                        <h1>10.10.23</h1>
+                        <span>7 artículos</span>
+                    </p>
+                </div>
+                <h1>120€</h1>
+                <img class="img" src="./Icons/flechita.svg">
+            </nav>
+        </article>
+    </section>
+</body>
+</html>

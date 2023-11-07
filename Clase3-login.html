@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    :root{
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --special-brown: rgb(158, 126, 111);
+        --white: #FFFFFF;
+        --black: #000000;
+        --sm: 12px;
+        --md: 16px;
+        --lg: 20px;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
+    .login{
+        width: 100%;
+        height: 98vh;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        display: grid; 
+        width: 400px;        
+    }
+    .logo{
+        width: 220px;
+        border-radius: 10px;
+        margin-bottom: 60px;
+        justify-self: center; /*Sin necesidad de grid, se centra solo él*/
+        display: none;
+    }
+    .form{
+        display: grid;
+        font-weight: bold;
+    }
+    .input{
+        border: transparent;
+        font-size: var(--md);
+        border-radius: 3px;
+        height: 30px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        background-color: var(--text-input-field);
+        font-family: 'Quicksand', sans-serif;
+    }
+    .form a{
+        text-align: center;
+        color: var(--special-brown);
+        text-decoration: none; /*Deja de subrayar el enlace*/
+        font-weight: bold;
+    }
+    .primary-button{
+        width: 100%;
+        height: 50px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        background-color: var(--special-brown);
+        font-size: var(--lg);
+        font-weight: bold;
+        border: transparent;
+        border-radius: 9px;
+        cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+    }
+    .login-button{
+        margin-bottom: 15px;
+        margin-top: 20px;
+        justify-self: center;
+    }
+    .secondary-button{
+        width: 100%;
+        height: 50px;
+        font-family: 'Quicksand', sans-serif;
+        color: var(--special-brown);
+        background-color: var(--white);
+        font-size: var(--lg);
+        font-weight: bold;
+        border: 1px solid var(--special-brown);
+        border-radius: 9px;
+        cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+    }
+    .sign-up-button{
+        margin-top: 60px;
+        justify-self: center;
+    }
+    @media (max-width: 1024px){
+        .logo{
+            display: block;
+        }
+        .container{
+            display: grid;
+            width: 300px;
+        }
+        .sign-up-button{
+            position: absolute;
+            width: 300px;
+            bottom: 12px;
+        }
+    }
+</style>
+<body>
+   <section class="login">   <!--PADRE-->
+        <article class="container">  <!--HIJO DIRECTO-->
+           <img src="./Logos/TansiLogo.ico" alt="logo" class="logo">
+           <form class="form">              <!--"NIETO"-->
+                <label for="email" class="email">Dirección de correo electrónico</label>
+                <input type="text" id="email" placeholder="tu@email.com" class="input input-email">
+
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="*********"  class="input input-password">
+
+                <input type="submit" value="Acceder" class="primary-button login-button">
+                <a href="/">Olvidé mi contraseña</a>
+           </form>
+           <input type="submit" value="Crear cuenta" class="secondary-button sign-up-button">
+        </article>
+   </section> 
+</body>
+</html>

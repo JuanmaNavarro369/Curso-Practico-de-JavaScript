@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style> 
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --special-brown: rgb(158, 126, 111);
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 12px;
+            --md: 16px;
+            --lg: 20px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .new-pass{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center center;
+        }
+        .container{
+            width: 300px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        .logo{
+            width: 220px;
+            border-radius: 10px;
+            margin-bottom: 65px;
+            justify-self: center; /*Sin necesidad de grid, se centra solo él*/
+            display: none;
+        }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 12px;
+            margin-top: 0;
+            text-align: center;
+        }
+        .subtitle{
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: 300px;
+            margin-bottom: 32px;
+            margin-top: 0;
+            text-align: center;
+        }
+        .form{
+           display: grid;
+        }
+        .label{
+            font-size: 15px;
+            font-weight: bold;
+            display: grid;
+            margin-bottom: 14px;
+        }
+        .input{
+            border: none;
+            border-radius: 3px;
+            background-color: var(--text-input-field);
+            height: 30px;
+        }
+        .primary-button{
+            justify-self: center;
+            width: 90%;
+            height: 50px;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            background-color: var(--special-brown);
+            font-size: var(--lg);
+            font-weight: bold;
+            border: transparent;
+            border-radius: 9px;
+            cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+        }
+        .confirm-button{
+            margin-top: 45px; 
+        }
+        @media (max-width: 1024px){
+            .logo{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="new-pass">     <!--PADRE-->
+        <article class="container">    <!--HIJO DIRECTO-->
+            <img src="./Logos/TansiLogo.ico" alt="logo" class="logo" />
+            <h1 class="title">Crea una nueva contraseña</h1>
+            <p class="subtitle">Introduce la nueva contraseña para tu cuenta</p>
+
+            <form class="form">  <!--"NIETO"-->
+                <label for="password" class="label">Nueva contraseña</label>
+                <input type="password" id="password" placeholder="*********" class="input">
+
+                <label for="new-password" class="label">Repite la nueva contraseña</label>
+                <input type="password" id="new-password" placeholder="*********" class="input input-password">
+
+                <input type="submit" value="Confirmar" class="primary-button confirm-button">
+            </form>
+        </article>
+    </section>
+</body>
+</html>

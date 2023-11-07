@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+    :root{
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --special-brown: rgb(158, 126, 111);
+        --white: #FFFFFF;
+        --black: #000000;
+        --sm: 12px;
+        --md: 16px;
+        --lg: 20px;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
+    .edit-account{
+        width: 100%;
+        height: 98vh;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        width: 400px;
+    }
+    .form{
+        display: grid;
+    }
+    .title{
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-size: 21px;
+    }
+    .label{
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .prrfs{
+        color: gray;
+        margin: 8px 0px 38px 8px;
+        font-size: 18px;
+    }
+    .secondary-button{
+        width: 100%;
+        height: 66px;
+        font-family: 'Quicksand', sans-serif;
+        color: var(--special-brown);
+        background-color: var(--white);
+        font-size: var(--lg);
+        font-weight: bold;
+        border: 1px solid var(--special-brown);
+        border-radius: 9px;
+        cursor: pointer; /*Hace que salga una manita en vez de flecha*/
+    }
+    .secondary-button:hover{
+            color: var(--white);
+            background-color: var(--special-brown);
+            border: none;
+        }
+    @media (max-width: 640px){
+        .edit-account{
+            display: grid;
+            place-items: start;
+            margin-top: 50px;
+            margin-left: 6px;
+        }
+        .container{
+            display: grid;
+            width: 300px;
+        }
+        .title{
+            margin-bottom: 40px;
+        }
+        .edit-button{
+            position: absolute;
+            width: 96%;
+            bottom: 12px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section class="edit-account">
+        <article class="container">
+            <h1 class="title">Mi cuenta</h1>
+            <form class="form">
+                <label for="name" class="label">Nombre</label>
+                <p class="prrfs">Manuela</p>
+
+                <label for="apellidos" class="label">Apellidos</label>
+                <p class="prrfs">González León</p>
+
+                <label for="email" class="label">Dirección de correo electrónico</label>
+                <p class="prrfs">tu@email.com</p>
+
+                <label for="password" class="label">Contraseña</label>
+                <p class="prrfs">*********</p>
+
+                <input type="submit" value="Editar" class="secondary-button edit-button">
+            </form>
+        </article>
+    </section>
+    
+</body>
+</html>

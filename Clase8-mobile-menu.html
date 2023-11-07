@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Móvil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--special-brown);
+            margin: 0;
+        }
+        :root{
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --special-brown: rgb(158, 126, 111);
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 12px;
+            --md: 16px;
+            --lg: 20px;
+        }
+        .mobile-menu{
+            padding: 24px;
+        }
+        .mobile-menu a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #000000;
+        }
+        .mobile-menu ul{
+            font-size: 18px;            
+            list-style: none;
+            padding: 9px;
+            margin: 0;
+        }
+        .mobile-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .mobile-menu ul:nth-child(2){
+            padding-top: 60px;
+        }
+        .mobile-menu ul:nth-child(3){
+            border-top: 1px solid var(--very-light-pink);
+            padding-top: 21px;
+        }
+        .mobile-menu ul li{
+            margin-bottom: 34px;
+        }
+        .mobile-menu .email{
+            margin: 46px 0px 12px 0px;
+            font-size: var(--md);
+            font-weight: 500;
+            color: var(--very-light-pink);
+        }
+        .mobile-menu .sign-out{
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <article class="mobile-menu">
+        <ul>
+            <h1 class="title">CATEGORIAS</h1>
+            <li class="all"><a href="/">Página principal</a></li>
+            <li class="botanic"><a href="/">Botánica</a></li>
+            <li class="clothes"><a href="/">Ropa</a></li>
+            <li class="furnitures"><a href="/">Mobiliario</a></li>
+            <li class="electronics"><a href="/">Electrónica</a></li>
+            <li class="toys"><a href="/">Juguetes</a></li>
+            <li class="others"><a href="/">Otros</a></li>
+        </ul>
+
+        <ul>
+            <li class="orders"><a href="/">Mis pedidos</a></li>
+            <li class="account"><a href="/">Mi cuenta</a></li>
+        </ul>
+
+        <ul>
+            <li class="email">manuela_glez@hotmail.es</li>
+            <li class="sign-out"><a href="/">Sign out</a></li>
+        </ul>
+    </article>
+</body>
+</html>
