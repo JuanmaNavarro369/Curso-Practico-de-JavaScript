@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Antique-Tansi: Tienda de Antigüedades</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./styles.css">
+   <script defer src="./main.js"></script>
+</head>
+<body>
+   <header class="header-nav">
+        <img src="./Icons/icon_menu.svg" class="burger-menu">
+       <nav class="navbar-left">
+           <img class="logo" src="./Logos/logo-botafota.svg">
+           <ul>
+               <li class="inice"><a>Inicio</a></li>
+               <li class="botanic"><a>Botánica</a></li>
+               <li class="clothes"><a>Ropa</a></li>
+               <li class="furnitures"><a>Mobiliario</a></li>
+               <li class="electronics"><a>Electrónica</a></li>
+               <li class="others"><a>Otros</a></li>
+           </ul>
+       </nav>
+
+       <nav class="navbar-right">
+           <ul>
+               <li class="email"><a>manuela_glez@hotmail.es</a></li>
+               <li class="navbar-shopping-cart">
+                   <img src="./Icons/icon_shopping_cart.svg" alt="sopping-cart"></a>
+                   <span>27</span>
+               </li> 
+           </ul>
+       </nav>   
+   </header>
+
+    <article class="desktop-menu inactive"> <!--MENU DESKTOP"-->
+        <ul>
+            <li>
+                <a href="/">Mis pedidos</a>
+            </li>
+
+            <li>
+                <a href="/">Mi cuenta</a>
+            </li>
+
+            <li>
+                <a href="/" class="sign-out">Cerrar sesión</a>
+            </li>
+        </ul>
+    </article>
+
+    <div class="container-mobile"> <!--MENU MOVIL"-->
+    <article class="mobile-menu inactive">
+        <ul>
+            <h1 class="title">CATEGORIAS</h1>
+            <li class="all"><a href="/">Página principal</a></li>
+            <li class="botanic"><a href="/">Botánica</a></li>
+            <li class="clothes"><a href="/">Ropa</a></li>
+            <li class="furnitures"><a href="/">Mobiliario</a></li>
+            <li class="electronics"><a href="/">Electrónica</a></li>
+            <li class="toys"><a href="/">Juguetes</a></li>
+            <li class="others"><a href="/">Otros</a></li>
+        </ul>
+
+        <ul>
+            <li class="orders"><a href="/">Mis pedidos</a></li>
+            <li class="account"><a href="/">Mi cuenta</a></li>
+        </ul>
+
+        <ul>
+            <li class="mobile-email">manuela_glez@hotmail.es</li>
+            <li class="sign-out"><a href="/">Sign out</a></li>
+        </ul>
+    </article>
+    </div>
+
+    <article class="my-order-container inactive"> <!--SHOPPING CART-->
+        <header class="header">
+            <img src="./Icons/flechita.svg" class="flechita"/>
+            <h1 class="title-cart">Tu carrito</h1>
+        </header>
+        <nav class="shopping-cart">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </figure>
+                <p class="name">Bicicleta Vintage</p>
+            </div>
+            <div class="product-detail-close">
+                <p class="price">120,00€</p>
+                    <img src="./Icons/icon-close.png" alt="close">
+            </div>
+        </nav>
+        <nav class="shopping-cart">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </figure>
+                <p class="name">Bicicleta Vintage</p>
+            </div>
+            <div class="product-detail-close">
+                <p class="price">120,00€</p>
+                    <img src="./Icons/icon-close.png" alt="close">
+            </div>
+        </nav>
+        <nav class="shopping-cart">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </figure>
+                <p class="name">Bicicleta Vintage</p>
+            </div>
+            <div class="product-detail-close">
+                <p class="price">120,00€</p>
+                    <img src="./Icons/icon-close.png" alt="close">
+            </div>
+        </nav>
+        <nav class="shopping-cart">
+            <div>
+                <figure>
+                    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                </figure>
+                <p class="name">Bicicleta Vintage</p>
+            </div>
+            <div class="product-detail-close">
+                <p class="price">120,00€</p>
+                    <img src="./Icons/icon-close.png" alt="close">
+            </div>
+        </nav>
+        <footer class="footer">
+            <div>
+                <span>Total</span>
+            </div>
+            <div>
+                <span>480€</span>
+            </div>
+        </footer>
+        <button type="submit" class="primary-button login-button">Comprar</button>
+    </article>
+
+    <section class="inicio">      <!--PRODUCT LIST (INICIO)-->
+        <article class="cards-container">   <!--Contenedor de tarjetas-->
+            <!-- <div class="product-card">        TARJETA
+                <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike"/>
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>Bicicleta</p>
+                    </div>
+                    <figure>
+                        <img src="./Icons/icon_cart.svg"alt="add-to-cart">
+                    </figure> 
+                </div>
+            </div> -->
+        </article>
+    </section>
+</body>
+</html>
